@@ -1,42 +1,44 @@
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&height=180&color=0:0f172a,55:0e7490,100:f59e0b&text=P0lar1ght&fontColor=ffffff&fontSize=48&fontAlignY=36&desc=Practical%20Security%20Research%20%7C%20Red%20Team%20Tooling%20%7C%20JVM%20Runtime%20Analysis&descAlignY=58&descSize=16" alt="P0lar1ght" />
+  <img src="https://capsule-render.vercel.app/api?type=waving&height=180&color=0:0f172a,55:0e7490,100:f59e0b&text=P0lar1ght&fontColor=ffffff&fontSize=48&fontAlignY=36&desc=Red%20Team%20Tooling%20%7C%20Vulnerability%20Research%20%7C%20Authorized%20Security%20Testing&descAlignY=58&descSize=16" alt="P0lar1ght" />
 </p>
 
 <p align="center">
   <a href="https://p0lar1ght.github.io"><img src="https://img.shields.io/badge/Blog-p0lar1ght.github.io-0e7490?style=for-the-badge&logo=githubpages&logoColor=white" alt="Blog" /></a>
-  <a href="https://github.com/P0lar1ght?tab=repositories"><img src="https://img.shields.io/badge/Focus-Security%20Research-f59e0b?style=for-the-badge&logo=gnometerminal&logoColor=white" alt="Security Research" /></a>
-  <a href="https://github.com/P0lar1ght?tab=stars"><img src="https://img.shields.io/badge/Build-Tools%20For%20Real%20Scenarios-111827?style=for-the-badge&logo=java&logoColor=white" alt="Tools" /></a>
+  <a href="https://github.com/P0lar1ght?tab=repositories"><img src="https://img.shields.io/badge/Focus-Red%20Team%20Tooling-f59e0b?style=for-the-badge&logo=gnometerminal&logoColor=white" alt="Red Team Tooling" /></a>
+  <a href="https://github.com/P0lar1ght?tab=stars"><img src="https://img.shields.io/badge/Research-Vulnerability%20Discovery-111827?style=for-the-badge&logo=target&logoColor=white" alt="Vulnerability Research" /></a>
 </p>
 
 ## 关于我 / About
 
-我关注实战安全研究、红队工具、JVM 运行时分析，以及桌面安全工具工程化。
+我主要从事红队工具开发、漏洞挖掘与授权红队测试，关注真实攻防场景中的工具链稳定性、自动化能力和实战可用性。
 
-I focus on practical security research, red team tooling, JVM runtime analysis, and desktop security product engineering.
+My work focuses on red team tooling, vulnerability research, and authorized security testing, with an emphasis on stable, repeatable, and operator-friendly tooling for real-world assessment scenarios.
 
-我的工作更偏向真实环境：内存痕迹、Java 服务、终端工具、内部自动化，以及那些决定安全工具是否真正可用的工程细节。
+我会把 Java/JVM、内存痕迹分析、桌面端工具工程化等能力作为红队工具开发的一部分，而不是单独的身份标签。
 
-My work is shaped around real environments: memory artifacts, Java services, endpoint tools, internal automation, and the engineering details that decide whether a security tool is actually usable.
+Java/JVM research, memory artifact analysis, and desktop tooling are part of my broader red team toolchain work rather than standalone labels.
 
 ## 当前关注 / Current Focus
 
-- Java / JVM 安全研究、堆转储分析与运行时诊断。  
-  Java / JVM security research, heap dump analysis, and runtime diagnostics.
-- 面向授权测试与内部评估的红队辅助工具。  
-  Red team support tools for authorized security testing and internal assessment.
-- 基于 Java、Rust、Node.js、Tauri 的跨平台桌面工具。  
-  Cross-platform desktop tooling with Java, Rust, Node.js, and Tauri.
-- 将实战经验沉淀为可复用的工具、文档和流程。  
+- 红队工具开发与自动化工具链建设。  
+  Red team tool development and automation for authorized assessments.
+- 漏洞挖掘、漏洞复现与利用链分析。  
+  Vulnerability discovery, reproduction, and exploit-chain analysis.
+- 授权红队测试中的信息收集、凭据风险与运行时敏感信息分析。  
+  Reconnaissance, credential-risk analysis, and runtime sensitive-data analysis in authorized red team operations.
+- Java / JVM / Spring 生态安全研究，作为红队工具链的一部分。  
+  Java, JVM, and Spring ecosystem security research as part of red team tooling.
+- 将实战经验沉淀为稳定、可控、可交付的工具、文档和流程。  
   Turning field experience into repeatable tools, documentation, and workflows.
 
 ## 代表项目 / Featured Work
 
 | Project | Description | Stars |
 | --- | --- | --- |
-| [JVMHeapAnalyzer](https://github.com/P0lar1ght/JVMHeapAnalyzer) | Java 堆转储敏感信息自动化分析工具，用于运行时痕迹、环境信息、框架密钥与业务上下文分析。<br />Automated Java heap dump analysis for sensitive runtime artifacts, environment clues, framework secrets, and operational context. | 9 |
-| [SunLoginHacker](https://github.com/P0lar1ght/SunLoginHacker) | 面向授权环境的向日葵内存痕迹分析命令行研究工具。<br />Command-line research tool for Sunlogin memory artifact analysis in authorized environments. | 5 |
-| [ToDeskHacker](https://github.com/P0lar1ght/ToDeskHacker) | 面向授权环境的 ToDesk 内存痕迹分析命令行研究工具。<br />Command-line research tool for ToDesk memory artifact analysis in authorized environments. | 4 |
-| [p0lar1ght.github.io](https://github.com/P0lar1ght/p0lar1ght.github.io) | 个人主页与安全研究、工具开发、实验记录。<br />Personal site and notes for security research, tooling, and experiments. | 1 |
+| [JVMHeapAnalyzer](https://github.com/P0lar1ght/JVMHeapAnalyzer) | 面向授权测试场景的 Java 堆转储分析工具，用于辅助识别运行时痕迹、环境线索、框架密钥与业务上下文。<br />Java heap dump analysis tool for authorized assessments, helping identify runtime artifacts, environment clues, framework secrets, and business context. | 9 |
+| [SunLoginHacker](https://github.com/P0lar1ght/SunLoginHacker) | 面向授权环境的远控客户端内存痕迹分析研究工具。<br />Memory artifact research tool for remote-access clients in authorized environments. | 5 |
+| [ToDeskHacker](https://github.com/P0lar1ght/ToDeskHacker) | 面向授权环境的远控客户端内存痕迹分析研究工具。<br />Memory artifact research tool for remote-access clients in authorized environments. | 4 |
+| [p0lar1ght.github.io](https://github.com/P0lar1ght/p0lar1ght.github.io) | 个人主页与红队工具、漏洞研究、攻防实验记录。<br />Personal site and notes for red team tooling, vulnerability research, and security experiments. | 1 |
 
 ## 技术栈 / Toolbox
 
@@ -60,12 +62,12 @@ My work is shaped around real environments: memory artifacts, Java services, end
 
 ## 原则 / Principles
 
-- 工具应该服务于真实评估，而不只是演示效果。  
-  Tools should be useful in real assessments, not only in demos.
-- 研究应该可复现、有记录，并限定在授权环境中。  
-  Research should be reproducible, documented, and scoped to authorized environments.
-- 好的安全工程需要技术深度、稳定性和使用体验同时在线。  
-  Good security engineering is equal parts technique, stability, and operator experience.
+- 工具应该服务于授权测试和真实评估，而不只是演示效果。  
+  Tools should support authorized testing and real assessments, not only demos.
+- 漏洞研究应该可复现、可验证、可交付。  
+  Vulnerability research should be reproducible, verifiable, and deliverable.
+- 红队工具不仅要能跑，还要稳定、可控、可审计。  
+  Red team tooling should be functional, stable, controllable, and auditable.
 
 <p align="center">
   <img src="https://capsule-render.vercel.app/api?type=waving&height=90&section=footer&color=0:f59e0b,45:0e7490,100:0f172a" alt="footer" />
