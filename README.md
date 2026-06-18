@@ -10,13 +10,13 @@
 
 ## 关于我 / About
 
-我主要从事红队工具开发、漏洞挖掘与授权红队测试，关注真实攻防场景中的工具链稳定性、自动化能力和实战可用性。
+红队工具开发、漏洞挖掘和红队测试是我长期投入的方向。我更关注工具在真实环境里的稳定性、自动化程度和可交付性，也喜欢把一次性的测试经验沉淀成可以复用的工具链。
 
-My work focuses on red team tooling, vulnerability research, and authorized security testing, with an emphasis on stable, repeatable, and operator-friendly tooling for real-world assessment scenarios.
+I build red team tools, research vulnerabilities, and work on practical security testing. I care about tooling that stays reliable in real environments, can be automated, and is useful beyond a one-off engagement.
 
-我会把 Java/JVM、内存痕迹分析、桌面端工具工程化等能力作为红队工具开发的一部分，而不是单独的身份标签。
+Java/JVM、内存痕迹分析、桌面端工具工程化是我常用的技术切面，但它们服务于更大的目标：让红队工具更稳定、更顺手、更接近实战。
 
-Java/JVM research, memory artifact analysis, and desktop tooling are part of my broader red team toolchain work rather than standalone labels.
+Java/JVM research, memory artifact analysis, and desktop tooling are recurring parts of that work, all in service of stronger red team toolchains.
 
 ## 当前关注 / Current Focus
 
