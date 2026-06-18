@@ -1,33 +1,36 @@
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&height=180&color=0:0f172a,55:0e7490,100:f59e0b&text=P0lar1ght&fontColor=ffffff&fontSize=48&fontAlignY=36&desc=Red%20Team%20Tooling%20%7C%20Vulnerability%20Research%20%7C%20Authorized%20Security%20Testing&descAlignY=58&descSize=16" alt="P0lar1ght" />
+  <img src="https://capsule-render.vercel.app/api?type=waving&height=180&color=0:0f172a,55:0e7490,100:f59e0b&text=P0lar1ght&fontColor=ffffff&fontSize=48&fontAlignY=36&desc=Vulnerability%20Research%20%7C%20AI%20Security%20%7C%20Java%20Security%20%7C%20Red%20Team%20Tooling&descAlignY=58&descSize=16" alt="P0lar1ght" />
 </p>
 
 <p align="center">
   <a href="https://p0lar1ght.github.io"><img src="https://img.shields.io/badge/Blog-p0lar1ght.github.io-0e7490?style=for-the-badge&logo=githubpages&logoColor=white" alt="Blog" /></a>
   <a href="https://github.com/P0lar1ght?tab=repositories"><img src="https://img.shields.io/badge/Focus-Red%20Team%20Tooling-f59e0b?style=for-the-badge&logo=gnometerminal&logoColor=white" alt="Red Team Tooling" /></a>
   <a href="https://github.com/P0lar1ght?tab=stars"><img src="https://img.shields.io/badge/Research-Vulnerability%20Discovery-111827?style=for-the-badge&logo=target&logoColor=white" alt="Vulnerability Research" /></a>
+  <a href="https://github.com/P0lar1ght?tab=repositories"><img src="https://img.shields.io/badge/Security-AI%20%26%20Java-0e7490?style=for-the-badge&logo=openjdk&logoColor=white" alt="AI and Java Security" /></a>
 </p>
 
 ## 关于我 / About
 
-漏洞挖掘、安全研究、红队工具开发和红队测试是我长期投入的方向。我关注漏洞从发现、复现到利用链分析的完整过程，也喜欢把真实测试中的经验沉淀成稳定、可复用的工具链。
+漏洞挖掘、安全研究、红队工具开发和红队测试是我长期投入的方向。安全研究上，我关注 AI 安全与 Java 安全；漏洞研究上，我更在意从发现、复现到利用链分析的完整过程。
 
-I work on vulnerability research, security research, red team tooling, and practical security testing. I care about the full path from discovery and reproduction to exploit-chain analysis, and about turning field experience into reliable reusable tooling.
+I work on vulnerability research, security research, red team tooling, and practical security testing, with a focus on AI security and Java security. I care about the full path from discovery and reproduction to exploit-chain analysis.
 
-Java/JVM、内存痕迹分析、桌面端工具工程化是我常用的技术切面，但它们服务于更大的目标：让红队工具更稳定、更顺手、更接近实战。
+我也喜欢把真实测试中的经验沉淀成稳定、可复用的工具链。Java/JVM、内存痕迹分析、桌面端工具工程化是我常用的技术切面，但它们服务于更大的目标：让红队工具更稳定、更顺手、更接近实战。
 
-Java/JVM research, memory artifact analysis, and desktop tooling are recurring parts of that work, all in service of stronger red team toolchains.
+I also enjoy turning field experience into reliable reusable tooling. Java/JVM research, memory artifact analysis, and desktop tooling are recurring parts of that work, all in service of stronger red team toolchains.
 
 ## 当前关注 / Current Focus
 
-- 漏洞挖掘、安全研究、漏洞复现与利用链分析。  
-  Vulnerability research, security research, reproduction, and exploit-chain analysis.
+- 漏洞挖掘、漏洞复现与利用链分析。  
+  Vulnerability discovery, reproduction, and exploit-chain analysis.
+- AI 安全研究，包括 AI 应用、Agent 与自动化安全测试场景。  
+  AI security research, including AI applications, agents, and automated security testing scenarios.
+- Java 安全研究，包括 Java / JVM / Spring 生态与工具化落地。  
+  Java security research across the Java, JVM, and Spring ecosystem with practical tooling.
 - 红队工具开发与自动化工具链建设。  
   Red team tool development and automation for authorized assessments.
 - 授权红队测试中的信息收集、凭据风险与运行时敏感信息分析。  
   Reconnaissance, credential-risk analysis, and runtime sensitive-data analysis in authorized red team operations.
-- Java / JVM / Spring 生态安全研究与工具化落地。  
-  Java, JVM, and Spring ecosystem security research with practical tooling.
 - 将实战经验沉淀为稳定、可控、可交付的工具、文档和流程。  
   Turning field experience into repeatable tools, documentation, and workflows.
 
