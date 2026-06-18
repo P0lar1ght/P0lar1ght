@@ -10,9 +10,9 @@
 
 ## 关于我 / About
 
-红队工具开发、漏洞挖掘和红队测试是我长期投入的方向。我更关注工具在真实环境里的稳定性、自动化程度和可交付性，也喜欢把一次性的测试经验沉淀成可以复用的工具链。
+漏洞挖掘、安全研究、红队工具开发和红队测试是我长期投入的方向。我关注漏洞从发现、复现到利用链分析的完整过程，也喜欢把真实测试中的经验沉淀成稳定、可复用的工具链。
 
-I build red team tools, research vulnerabilities, and work on practical security testing. I care about tooling that stays reliable in real environments, can be automated, and is useful beyond a one-off engagement.
+I work on vulnerability research, security research, red team tooling, and practical security testing. I care about the full path from discovery and reproduction to exploit-chain analysis, and about turning field experience into reliable reusable tooling.
 
 Java/JVM、内存痕迹分析、桌面端工具工程化是我常用的技术切面，但它们服务于更大的目标：让红队工具更稳定、更顺手、更接近实战。
 
@@ -20,14 +20,14 @@ Java/JVM research, memory artifact analysis, and desktop tooling are recurring p
 
 ## 当前关注 / Current Focus
 
+- 漏洞挖掘、安全研究、漏洞复现与利用链分析。  
+  Vulnerability research, security research, reproduction, and exploit-chain analysis.
 - 红队工具开发与自动化工具链建设。  
   Red team tool development and automation for authorized assessments.
-- 漏洞挖掘、漏洞复现与利用链分析。  
-  Vulnerability discovery, reproduction, and exploit-chain analysis.
 - 授权红队测试中的信息收集、凭据风险与运行时敏感信息分析。  
   Reconnaissance, credential-risk analysis, and runtime sensitive-data analysis in authorized red team operations.
-- Java / JVM / Spring 生态安全研究，作为红队工具链的一部分。  
-  Java, JVM, and Spring ecosystem security research as part of red team tooling.
+- Java / JVM / Spring 生态安全研究与工具化落地。  
+  Java, JVM, and Spring ecosystem security research with practical tooling.
 - 将实战经验沉淀为稳定、可控、可交付的工具、文档和流程。  
   Turning field experience into repeatable tools, documentation, and workflows.
 
