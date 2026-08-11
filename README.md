@@ -1,17 +1,18 @@
-<p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&height=160&color=0:0f172a,55:0e7490,100:f59e0b&text=P0lar1ght&fontColor=ffffff&fontSize=46&fontAlignY=40&desc=AI%20安全%20%2F%20红队工具%20%2F%20Java%20%26%20漏洞研究&descAlignY=62&descSize=15" alt="P0lar1ght" />
-</p>
+# P0lar1ght
 
 <p align="center">
-  <a href="https://p0lar1ght.github.io"><img src="https://img.shields.io/badge/Blog-p0lar1ght.github.io-0e7490?style=flat-square" alt="Blog" /></a>
+  <a href="https://p0lar1ght.github.io"><img src="https://img.shields.io/badge/主页-p0lar1ght.github.io-0e7490?style=flat-square" alt="Home" /></a>
   <img src="https://img.shields.io/badge/Focus-实战安全研究-f59e0b?style=flat-square" alt="Focus" />
+  <img src="https://img.shields.io/github/followers/P0lar1ght?label=Followers&style=flat-square" alt="Followers" />
 </p>
+
+AI 安全 · 红队工具 · Java / 漏洞研究
 
 ## 关于我
 
 做漏洞挖掘和红队相关工作，最近一半时间在搞 **AI + 安全**，一半在 **Java / 红队工具**。
 
-会写平台和 CLI，也会抠 JVM 堆、内存痕迹、内存马这类偏底层的东西。有用的会尽量开源；笔记和实验多在仓库与本地整理，[博客](https://p0lar1ght.github.io) 更新不多，当个主页用就行。
+会写平台和 CLI，也会抠 JVM 堆、内存痕迹、内存马这类偏底层的东西。有用的会尽量开源；笔记和实验多在仓库与本地整理，[主页](https://p0lar1ght.github.io) 更新不多，当个导航用就行。
 
 ## 最近在做
 
@@ -45,22 +46,31 @@
 
 Java · JVM · Python · Go · Rust · TypeScript · Spring · Tauri · GitHub Actions
 
-
 ## Contribution Snake
 
+<!-- 图片走 raw.githubusercontent.com，不经过 Vercel，GitHub camo 更稳 -->
 <p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/P0lar1ght/P0lar1ght/output/github-contribution-grid-snake-dark.svg" />
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/P0lar1ght/P0lar1ght/output/github-contribution-grid-snake.svg" />
-    <img alt="github contribution grid snake animation" src="https://raw.githubusercontent.com/P0lar1ght/P0lar1ght/output/github-contribution-grid-snake.svg" />
-  </picture>
+  <img alt="github contribution grid snake animation" src="https://raw.githubusercontent.com/P0lar1ght/P0lar1ght/output/github-contribution-grid-snake.svg" />
+</p>
+
+<p align="center">
+  <img alt="github contribution grid snake animation dark" src="https://raw.githubusercontent.com/P0lar1ght/P0lar1ght/output/github-contribution-grid-snake-dark.svg" />
 </p>
 
 ## Stats
 
-<p>
-  <img height="160" src="https://github-readme-stats.vercel.app/api?username=P0lar1ght&show_icons=true&theme=transparent&hide_border=true&rank_icon=github&include_all_commits=true" alt="GitHub stats" />
-  <img height="160" src="https://github-readme-stats.vercel.app/api/top-langs/?username=P0lar1ght&layout=compact&theme=transparent&hide_border=true" alt="Top languages" />
+<!-- shields.io 相对 vercel 动态图更稳；Vercel 上的 stats 常被 camo 代理打不开 -->
+<p align="center">
+  <img src="https://img.shields.io/github/stars/P0lar1ght?label=Stars&style=flat-square" alt="Stars" />
+  <img src="https://img.shields.io/github/followers/P0lar1ght?label=Followers&style=flat-square" alt="Followers" />
+  <a href="https://github.com/P0lar1ght?tab=repositories"><img src="https://img.shields.io/badge/Repos-public-0e7490?style=flat-square" alt="Repos" /></a>
+</p>
+
+<p align="center">
+  <a href="https://github.com/P0lar1ght/JVMHeapAnalyzer"><img src="https://img.shields.io/github/stars/P0lar1ght/JVMHeapAnalyzer?style=flat-square&label=JVMHeapAnalyzer" alt="JVMHeapAnalyzer" /></a>
+  <a href="https://github.com/P0lar1ght/SunGods"><img src="https://img.shields.io/github/stars/P0lar1ght/SunGods?style=flat-square&label=SunGods" alt="SunGods" /></a>
+  <a href="https://github.com/P0lar1ght/argus"><img src="https://img.shields.io/github/stars/P0lar1ght/argus?style=flat-square&label=Argus" alt="Argus" /></a>
+  <a href="https://github.com/P0lar1ght/PolarBytes"><img src="https://img.shields.io/github/stars/P0lar1ght/PolarBytes?style=flat-square&label=PolarBytes" alt="PolarBytes" /></a>
 </p>
 
 ---
