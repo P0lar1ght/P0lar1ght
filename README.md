@@ -1,77 +1,57 @@
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&height=180&color=0:0f172a,55:0e7490,100:f59e0b&text=P0lar1ght&fontColor=ffffff&fontSize=48&fontAlignY=36&desc=Vulnerability%20Research%20%7C%20AI%20Security%20%7C%20Java%20Security%20%7C%20Red%20Team%20Tooling&descAlignY=58&descSize=16" alt="P0lar1ght" />
+  <img src="https://capsule-render.vercel.app/api?type=waving&height=160&color=0:0f172a,55:0e7490,100:f59e0b&text=P0lar1ght&fontColor=ffffff&fontSize=46&fontAlignY=40&desc=AI%20安全%20%2F%20红队工具%20%2F%20Java%20%26%20漏洞研究&descAlignY=62&descSize=15" alt="P0lar1ght" />
 </p>
 
 <p align="center">
-  <a href="https://p0lar1ght.github.io"><img src="https://img.shields.io/badge/Blog-p0lar1ght.github.io-0e7490?style=for-the-badge&logo=githubpages&logoColor=white" alt="Blog" /></a>
-  <a href="https://github.com/P0lar1ght?tab=repositories"><img src="https://img.shields.io/badge/Focus-Red%20Team%20Tooling-f59e0b?style=for-the-badge&logo=gnometerminal&logoColor=white" alt="Red Team Tooling" /></a>
-  <a href="https://github.com/P0lar1ght?tab=stars"><img src="https://img.shields.io/badge/Research-Vulnerability%20Discovery-111827?style=for-the-badge&logo=target&logoColor=white" alt="Vulnerability Research" /></a>
-  <a href="https://github.com/P0lar1ght?tab=repositories"><img src="https://img.shields.io/badge/Security-AI%20%26%20Java-0e7490?style=for-the-badge&logo=openjdk&logoColor=white" alt="AI and Java Security" /></a>
+  <a href="https://p0lar1ght.github.io"><img src="https://img.shields.io/badge/Blog-p0lar1ght.github.io-0e7490?style=flat-square" alt="Blog" /></a>
+  <img src="https://img.shields.io/badge/Focus-实战安全研究-f59e0b?style=flat-square" alt="Focus" />
 </p>
 
-## 关于我 / About
+## 关于我
 
-漏洞挖掘、安全研究、红队工具开发和红队测试是我长期投入的方向。安全研究上，我关注 AI 安全与 Java 安全；漏洞研究上，我更在意从发现、复现到利用链分析的完整过程。
+做漏洞挖掘和红队相关工作，最近一半时间在搞 **AI + 安全**，一半在 **Java / 红队工具**。
 
-I work on vulnerability research, security research, red team tooling, and practical security testing, with a focus on AI security and Java security. I care about the full path from discovery and reproduction to exploit-chain analysis.
+会写平台和 CLI，也会抠 JVM 堆、内存痕迹、内存马这类偏底层的东西。有用的会尽量开源；笔记和实验多在仓库与本地整理，[博客](https://p0lar1ght.github.io) 更新不多，当个主页用就行。
 
-我也喜欢把真实测试中的经验沉淀成稳定、可复用的工具链。Java/JVM、内存痕迹分析、桌面端工具工程化是我常用的技术切面，但它们服务于更大的目标：让红队工具更稳定、更顺手、更接近实战。
+## 最近在做
 
-I also enjoy turning field experience into reliable reusable tooling. Java/JVM research, memory artifact analysis, and desktop tooling are recurring parts of that work, all in service of stronger red team toolchains.
+### AI 相关
 
-## 当前关注 / Current Focus
+- **[PolarVigil](https://github.com/P0lar1ght/PolarVigil)** — 本地 Agent Runtime（Runtime / Gateway / CLI / SDK），给别的产品嵌 Agent 用，不绑死某一家业务  
+  二进制发布在 [PolarVigil-Releases](https://github.com/P0lar1ght/PolarVigil-Releases)
+- **[WeepCode](https://github.com/Captain-AI-Hub/WeepCode)** — 终端 AI 编码助手（TUI），自带多 Provider，能改代码、跑命令、做长任务  
+- **[Argus](https://github.com/P0lar1ght/argus)** — 分布式攻击面管理 / 漏洞巡航，带 AI Copilot 辅助运营（ASM + 任务编排 + 弹药库）  
+- **CPG + Joern**：图分析 / 污点与调用链，接到 MCP / Agent，给代码审计和 cyber 研判赋能  
 
-- 漏洞挖掘、漏洞复现与利用链分析。  
-  Vulnerability discovery, reproduction, and exploit-chain analysis.
-- AI 安全研究，包括 AI 应用、Agent 与自动化安全测试场景。  
-  AI security research, including AI applications, agents, and automated security testing scenarios.
-- Java 安全研究，包括 Java / JVM / Spring 生态与工具化落地。  
-  Java security research across the Java, JVM, and Spring ecosystem with practical tooling.
-- 红队工具开发与自动化工具链建设。  
-  Red team tool development and automation for authorized assessments.
-- 授权红队测试中的信息收集、凭据风险与运行时敏感信息分析。  
-  Reconnaissance, credential-risk analysis, and runtime sensitive-data analysis in authorized red team operations.
-- 将实战经验沉淀为稳定、可控、可交付的工具、文档和流程。  
-  Turning field experience into repeatable tools, documentation, and workflows.
+### 红队 / 授权测试工具
 
-## 代表项目 / Featured Work
+- **[SunGods](https://github.com/P0lar1ght/SunGods)** — 授权场景下的综合渗透平台（会话、Payload、插件、MCP、和 PolarBytes 能力对接）  
+- **[PolarBytes](https://github.com/P0lar1ght/PolarBytes)** — 内存马 / 字节码 / Wrapper / Agent JAR 生成能力，SDK 给宿主项目用  
+- **[JVMHeapAnalyzer](https://github.com/P0lar1ght/JVMHeapAnalyzer)** — Java 堆 dump 分析，挖环境信息、框架密钥、凭据等运行时痕迹  
+- **[SunLoginHacker](https://github.com/P0lar1ght/SunLoginHacker)** / **[ToDeskHacker](https://github.com/P0lar1ght/ToDeskHacker)** — 远控客户端内存痕迹研究（授权环境）  
 
-| Project | Description | Stars |
-| --- | --- | --- |
-| [JVMHeapAnalyzer](https://github.com/P0lar1ght/JVMHeapAnalyzer) | 面向授权测试场景的 Java 堆转储分析工具，用于辅助识别运行时痕迹、环境线索、框架密钥与业务上下文。<br />Java heap dump analysis tool for authorized assessments, helping identify runtime artifacts, environment clues, framework secrets, and business context. | 9 |
-| [SunLoginHacker](https://github.com/P0lar1ght/SunLoginHacker) | 面向授权环境的远控客户端内存痕迹分析研究工具。<br />Memory artifact research tool for remote-access clients in authorized environments. | 5 |
-| [ToDeskHacker](https://github.com/P0lar1ght/ToDeskHacker) | 面向授权环境的远控客户端内存痕迹分析研究工具。<br />Memory artifact research tool for remote-access clients in authorized environments. | 4 |
-| [p0lar1ght.github.io](https://github.com/P0lar1ght/p0lar1ght.github.io) | 个人主页与红队工具、漏洞研究、攻防实验记录。<br />Personal site and notes for red team tooling, vulnerability research, and security experiments. | 1 |
+### 安全研究
 
-## 技术栈 / Toolbox
+在做的具体方向：
+
+- **Java / JVM 攻防**：反序列化与利用链、内存马形态与检测点、堆 dump / 内存痕迹里的敏感信息  
+- **RASP 研究**：商业/开源 Agent 的加载链路、Hook 切点、规则面与绕过边界（以可复现分析笔记为主）  
+- **CPG + Joern**：建图、污点与调用链追踪，接到 MCP / Agent，支撑代码审计和 cyber 研判  
+- **产品与组件漏洞**：业务系统、中间件相关漏洞的发现、复现与影响面评估  
+
+研究默认只在 **授权或自建靶场** 里做利用验证；结论尽量可复现，利用细节服务修复与检测，不面向未授权滥用。  
+
+## 技术栈
+
+Java · JVM · Python · Go · Rust · TypeScript · Spring · Tauri · GitHub Actions
+
+## Stats
 
 <p>
-  <img src="https://img.shields.io/badge/Java-111827?style=flat-square&logo=openjdk&logoColor=white" alt="Java" />
-  <img src="https://img.shields.io/badge/JVM-0e7490?style=flat-square&logo=coffeescript&logoColor=white" alt="JVM" />
-  <img src="https://img.shields.io/badge/Python-2563eb?style=flat-square&logo=python&logoColor=white" alt="Python" />
-  <img src="https://img.shields.io/badge/Rust-b45309?style=flat-square&logo=rust&logoColor=white" alt="Rust" />
-  <img src="https://img.shields.io/badge/Node.js-15803d?style=flat-square&logo=nodedotjs&logoColor=white" alt="Node.js" />
-  <img src="https://img.shields.io/badge/Tauri-24c8db?style=flat-square&logo=tauri&logoColor=111827" alt="Tauri" />
-  <img src="https://img.shields.io/badge/Spring-16a34a?style=flat-square&logo=spring&logoColor=white" alt="Spring" />
-  <img src="https://img.shields.io/badge/GitHub%20Actions-111827?style=flat-square&logo=githubactions&logoColor=white" alt="GitHub Actions" />
+  <img height="160" src="https://github-readme-stats.vercel.app/api?username=P0lar1ght&show_icons=true&theme=transparent&hide_border=true&rank_icon=github&include_all_commits=true" alt="GitHub stats" />
+  <img height="160" src="https://github-readme-stats.vercel.app/api/top-langs/?username=P0lar1ght&layout=compact&theme=transparent&hide_border=true" alt="Top languages" />
 </p>
 
-## GitHub 概览 / GitHub Snapshot
+---
 
-<p>
-  <img height="165" src="https://github-readme-stats.vercel.app/api?username=P0lar1ght&show_icons=true&theme=transparent&hide_border=true&rank_icon=github&include_all_commits=true" alt="GitHub stats" />
-  <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=P0lar1ght&layout=compact&theme=transparent&hide_border=true" alt="Top languages" />
-</p>
-
-## 原则 / Principles
-
-- 工具应该服务于授权测试和真实评估，而不只是演示效果。  
-  Tools should support authorized testing and real assessments, not only demos.
-- 漏洞研究应该可复现、可验证、可交付。  
-  Vulnerability research should be reproducible, verifiable, and deliverable.
-- 红队工具不仅要能跑，还要稳定、可控、可审计。  
-  Red team tooling should be functional, stable, controllable, and auditable.
-
-<p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&height=90&section=footer&color=0:f59e0b,45:0e7490,100:0f172a" alt="footer" />
-</p>
+内容默认面向 **授权测试与安全研究**。主页：[p0lar1ght.github.io](https://p0lar1ght.github.io)。
