@@ -1,0 +1,110 @@
+name: Update Blog Section
+
+on:
+  schedule:
+    - cron: '23 8 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update-blog:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Fetch and update blog posts
+        run: |
+          FEED_URLS=(
+            "https://p0lar1ght.github.io/atom.xml"
+            "https://p0lar1ght.github.io/feed.xml"
+            "https://p0lar1ght.github.io/index.xml"
+            "https://p0lar1ght.github.io/rss.xml"
+            "https://p0lar1ght.github.io/rss2.xml"
+          )
+
+          FEED=""
+          for url in "${FEED_URLS[@]}"; do
+            echo "Trying $url ..."
+            if curl -sL --max-time 10 "$url" | grep -qE '<(rss|feed|atom)'; then
+              FEED="$url"
+              echo "Found feed: $url"
+              break
+            fi
+          done
+
+          if [ -z "$FEED" ]; then
+            echo "No RSS/Atom feed found. Skipping update."
+            exit 0
+          fi
+
+          FEED_URL="$FEED" python3 << 'PYEOF'
+          import os, re, sys
+          from xml.etree import ElementTree as ET
+          from urllib.request import urlopen
+
+          feed_url = os.environ['FEED_URL']
+          try:
+              xml = urlopen(feed_url, timeout=15).read()
+          except Exception as e:
+              print(f"Failed to fetch feed: {e}", file=sys.stderr)
+              sys.exit(0)
+
+          posts = []
+          root = ET.fromstring(xml)
+
+          # RSS 2.0
+          for item in root.iter('item'):
+              title = item.findtext('title', '')
+              link = item.findtext('link', '')
+              if title and link:
+                  posts.append((title.strip(), link.strip()))
+              if len(posts) >= 5:
+                  break
+
+          # Atom
+          if not posts:
+              for entry in root.iter('{http://www.w3.org/2005/Atom}entry'):
+                  title = entry.findtext('{http://www.w3.org/2005/Atom}title', '')
+                  link_elem = entry.find('{http://www.w3.org/2005/Atom}link')
+                  link = link_elem.get('href', '') if link_elem is not None else ''
+                  if title and link:
+                      posts.append((title.strip(), link.strip()))
+                  if len(posts) >= 5:
+                      break
+
+          if not posts:
+              print("No posts found in feed.")
+              sys.exit(0)
+
+          lines = ["## 最近文章", ""]
+          for title, link in posts[:5]:
+              lines.append(f"- [{title}]({link})")
+          lines.append("")
+
+          with open('README.md', 'r') as f:
+              readme = f.read()
+
+          pattern = r'<!-- BLOG-START -->.*<!-- BLOG-END -->'
+          replacement = '<!-- BLOG-START -->\n' + '\n'.join(lines) + '\n<!-- BLOG-END -->'
+          readme = re.sub(pattern, replacement, readme, flags=re.DOTALL)
+
+          with open('README.md', 'w') as f:
+              f.write(readme)
+
+          print(f"Updated README with {len(posts)} posts.")
+          PYEOF
+
+      - name: Commit if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add README.md
+          if git diff --staged --quiet; then
+            echo "No changes to commit."
+          else
+            git commit -m "docs: update latest blog posts"
+            git push
+            echo "Committed and pushed."
+          fi
